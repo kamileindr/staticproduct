@@ -1,5 +1,8 @@
 * {
     margin: 2%;
+    font-family: komet, sans-serif;
+    font-style: normal;
+    font-weight: 100;
 }
 
 .front {
@@ -12,6 +15,11 @@
 
  .name {
     text-align: center;
+    font-weight: 600;
+    font-size: 260%;
+    border: 2px solid gray;
+    padding: 2%;
+    background-color: #E8E7E1;
  }
 
  .category {
@@ -22,9 +30,14 @@
  }
 
  .categoryoptions {
-    color: gray;
+    color: black;
     text-decoration: none;
     font-size: 150%;
+ }
+
+ .categoryoptions:hover {
+    color: grey;
+    transition: 0.5s ease;
  }
 
  .main {
@@ -35,11 +48,16 @@
  }
 
  .categorylist {
-    background-color:lightblue;
+    border: 3px solid #BAB9B5;
     padding: 5%;
     font-size: 150%;
     color: black;
-    text-decoration: none;
+    text-decoration:none;
+ }
+
+ .categorylist:hover {
+    background-color: #E8E7E1;
+    transition: 0.8s ease;
  }
 
 
