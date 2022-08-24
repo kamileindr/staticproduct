@@ -15,7 +15,7 @@
 
  .name {
     text-align: center;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 260%;
     border: 2px solid gray;
     padding: 2%;
@@ -50,7 +50,8 @@
  .categorylist {
     border: 3px solid #BAB9B5;
     padding: 5%;
-    font-size: 150%;
+    font-size: 190%;
+    font-weight: 500;
     color: black;
     text-decoration:none;
  }
@@ -60,11 +61,16 @@
     transition: 0.8s ease;
  }
 
+ .h2 {
+    font-size: 300%;
+    font-weight:500;
+ }
 
  .cards {
-    width: 27%;
-    box-shadow: 2px 2px 10px black;
+    width: 28%;
+    box-shadow: 2px 2px 10px grey;
     display: inline-block;
+    padding-bottom: 3%;
 }
 
 .image img {
@@ -73,14 +79,24 @@
 
 .title {
     text-align: center;
+    font-size: 60%;
+    font-weight: 600;
+    padding: 2%;
 }
 
 .des {
     text-align: center;
+    color: grey;
 }
 
 .readmore {
     text-decoration: none;
+    color: black;
+}
+
+.readmore:hover {
+    color: blue;
+    transition: 0.3s ease;
 }
 
 .menu {
