@@ -27,7 +27,7 @@
     font-size: 150%;
  }
 
- main {
+ .main {
     display: grid;
     grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15%;
     grid-template-columns: 60%;
@@ -42,3 +42,25 @@
     text-decoration: none;
  }
 
+
+ .cards {
+    width: 27%;
+    box-shadow: 2px 2px 10px black;
+    display: inline-block;
+}
+
+.image img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.des {
+    text-align: center;
+}
+
+.readmore {
+    text-decoration: none;
+}
