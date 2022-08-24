@@ -64,3 +64,14 @@
 .readmore {
     text-decoration: none;
 }
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 2%;
+}
+
+.bigpic  {
+    width: 60%;
+}
