@@ -12,21 +12,17 @@
  .fronta {
     text-decoration: none;
  }
+.mainNav nav a {
+    text-decoration: none;
+    display: flex;
+    column-count: 1;
+    justify-content: right;
 
- :root {
-    --off-color: red;
-  }
+}
   html {
     scroll-behavior: smooth;
   }
-  .mainNav h1 span {
-    display: inline-block;
-    transform: scaleX(-1);
-    color: var(--off-color);
-  }
-  .mainNav > * {
-    margin: 0;
-  }
+
   @media screen and (min-width: 700px) {
     .mainNav {
       display: flex;
@@ -55,38 +51,26 @@
     list-style-type: none;
   }
   .brandList li {
-    border-bottom: 1px solid #d8d8d8;
+    border: 1px solid #d8d8d8;
     display: flex;
-    justify-content: space-between;
+    justify-content:left;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .brandList a {
     text-decoration: none;
     display: block;
-    width: 100%;
+    width: 90%;
   }
-  .brandList li::after {
-    display: block;
-    width: 20px;
-    height: 20px;
-    content: "";
-    transition: all 0.3s;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 14"><path fill="none" stroke="white" d="M.8 12.87l7.5-6-7.5-6"></path></svg>');
-    background-repeat: no-repeat;
-    /* url('data:image/svg+xml;utf8,<svg class="svg-arrowRight" viewBox="0 0 9 14"><path fill="none" stroke="#979797" d="M.8 12.87l7.5-6-7.5-6"></path></svg>'); */
-  }
+
   .brandList li:hover {
     background: #d8d8d8;
     transition: transform 0.3s;
   }
-  .brandList li:hover::after {
-    transform: translateX(8px);
-  }
-  
-  @media screen and (min-width: 800px) {
+
+  @media screen and (min-width: 600px) {
     .brandList ol {
-      column-count: 2;
+      column-count: 1;
     }
   }
   
@@ -94,7 +78,7 @@
   .productlist main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
-    gap: 2rem;
+    gap: 2.5rem;
   }
   .productlist main h2 {
     grid-column: 1/-1;
@@ -113,6 +97,7 @@
   .productlist article {
     display: flex;
     flex-direction: column;
+    box-shadow:#d8d8d8 4px 4px 4px;
   }
   .productlist article.soldOut img {
     opacity: 0.5;
