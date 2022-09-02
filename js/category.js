@@ -9,9 +9,10 @@ function goThroughEach(data) {
 
 function showBrand(oneBrand) {
 
+  const firstLetter = oneBrand.brandname.charAt(0).toLowerCase();
+  console.log(`I'm ${oneBrand.brandname} and my letter ${firstLetter} and my selector #letter_${firstLetter}`);
 
-  
- /* console.log(oneBrand);
+
 
   const template = document.querySelector("template").content;
 
@@ -20,7 +21,13 @@ function showBrand(oneBrand) {
   myCopy.querySelector("a").textContent = oneBrand.brandname;
   myCopy.querySelector("a").href = `productlist.html?brandname=${oneBrand.brandname}`;
 
-const parent = document.querySelector("#letter_b ol");
 
-parent.appendChild(myCopy);*/
+ //console.log(oneBrand);
+
+  
+
+  const parent = document.querySelector(`#letter_${firstLetter}`);
+  if (parent) {
+    parent.appendChild(myCopy);
+  }
 }
