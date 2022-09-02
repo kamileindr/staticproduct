@@ -64,8 +64,8 @@
   }
 
   .brandList li:hover {
-    background: #d8d8d8;
-    transition: transform 0.3s;
+    background:wheat;
+    transition: ease 0.8s;
   }
 
   @media screen and (min-width: 600px) {
@@ -74,7 +74,6 @@
     }
   }
   
-  /*ProductList*/
   .productlist main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
@@ -108,6 +107,7 @@
     background: var(--color);
     color: var(--background-color);
     padding: 1rem;
+    
   }
   .productlist article .discounted,
   .productlist article .price span {
@@ -119,9 +119,11 @@
   }
   .discounted > p {
     margin-bottom: 0;
+    
   }
   .productlist article.onSale .price span {
     display: initial;
+    
   }
   .productlist article button {
     margin-top: auto;
@@ -132,9 +134,10 @@
   .discounted p:last-child {
     background: var(--off-color);
     padding: 0.2rem;
+    color: red;
+    border: 1px red solid;
   }
   
-  /*Product*/
   .breadcrumbs {
     list-style-type: none;
     display: flex;
@@ -148,15 +151,16 @@
     transition: all 0.3s;
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 14"><path fill="none" stroke="white" d="M.8 12.87l7.5-6-7.5-6"></path></svg>');
     background-repeat: no-repeat;
-    /* url('data:image/svg+xml;utf8,<svg class="svg-arrowRight" viewBox="0 0 9 14"><path fill="none" stroke="#979797" d="M.8 12.87l7.5-6-7.5-6"></path></svg>'); */
+    
   }
   .breadcrumbs li:last-child::after {
     background: none;
   }
   .purchaseBox {
-    background: #d8d8d8;
+    background: wheat;
     color: var(--background-color);
     padding: 1rem;
+    border-radius: 10px;
   }
   .info {
     padding: 1rem;
@@ -173,11 +177,13 @@
   }
   .purchaseBox form label {
     gap: 1rem;
+  
   }
   .purchaseBox button {
     display: block;
     margin-top: 1rem;
     width: 100%;
+    border-radius: 7px;
   }
   dt {
     font-weight: 700;
@@ -196,19 +202,3 @@
   }
   
   
-  .circle {
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    border: 5px dotted hotpink;
-    border-top-color: transparent;
-    animation: circle infinite 2s linear;
-  }
-  @keyframes circle {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
